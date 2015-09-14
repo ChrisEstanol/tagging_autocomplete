@@ -1,9 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @tag.name %>
-</p>
-
-<%= link_to 'Edit', edit_tag_path(@tag) %> |
-<%= link_to 'Back', tags_path %>
+<section>
+  <div class='spacer-100'></div>
+  <div class='row' >
+    <div class='col-md-4'></div>
+    <div class='col-md-4'>
+      <p><strong>Name:</strong><%= @tag.name %></p>
+      <%= link_to 'Edit', edit_tag_path(@tag) %> |
+      <%= link_to 'Back', tags_path %>
+    </div>
+    <div class='col-md-4'></div>
+  </div>
+</section>

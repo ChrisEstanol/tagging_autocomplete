@@ -1,6 +1,13 @@
-<h1>Editing Product</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<section>
+  <div class='spacer-100'></div>
+  <div class='row' >
+    <div class='col-md-4'></div>
+    <div class='col-md-4'>
+      <%= link_to '← back', :back %>
+      <h3>Edit Product</h3>
+      <%= render 'layouts/messages' %>
+      <%= render 'form' %>
+    </div>
+    <div class='col-md-4'></div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<header>
+  <div class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to "Tagging Autocomplete", root_path, class: "navbar-brand" %>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Tags", tags_path %></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</header>
