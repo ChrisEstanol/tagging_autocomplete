@@ -6,7 +6,7 @@
     <div class='col-md-4'>
       <p><strong>Name: </strong><%= @product.name %></p>
       <p><strong>Description: </strong><%= @product.description %></p>
-      <p><strong>Tags: </strong><%= @product.tag_list %></p>
+      <p><strong>Tags: </strong><%= raw @product.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
       <%= link_to 'Edit', edit_product_path(@product) %> |
       <%= link_to 'Back', products_path %>
     </div>
