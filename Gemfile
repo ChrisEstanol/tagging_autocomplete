@@ -14,7 +14,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
-gem 'rails-assets-chosen'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-chosen'
+end
 
 
 group :development, :test do

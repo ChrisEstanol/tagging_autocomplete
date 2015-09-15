@@ -15,5 +15,13 @@
     <div class="container">
       <%= yield %>
     </div>
+    <script>
+      $(document).on('ready page:load', function () {
+        $('#product_tag_ids').chosen({
+          allow_single_deselect: true,
+          width: '100%'
+        })
+      });
+    </script>
   </body>
 </html>
