@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'products#index'
-  resources :tags  
-  resources :products
+  resources :tags, except: :show
   get 'tags/:tag', to: 'products#index'
+  resources :products
+  root 'products#index'
 end
